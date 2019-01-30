@@ -56,13 +56,15 @@ class BasicsFeatureSpec : FeatureSpec({
             maxOf(min, max) shouldBe max
         }
 
-        scenario("") {
-            minOf(1, 2)
+        scenario("returns min") {
+            minOf(5, 2)
         }
     }
 
     // Write minOff function
+        minnOf(listOf(123,4324,12312,23,1,2))
 
+    
     feature("when expression") {
         describe(1) shouldBe "One"
         describe("hello") shouldBe "Unknown"
@@ -110,3 +112,8 @@ fun count(list: ArrayList<String>): Int {
     }
     return counter
 }
+fun minnOf(list: List<Int>) : Int? {
+    print(list.min())
+    return list.min()
+}
+
